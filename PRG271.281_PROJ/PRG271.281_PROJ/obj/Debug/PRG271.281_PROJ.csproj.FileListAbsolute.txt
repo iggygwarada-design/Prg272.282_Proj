@@ -1,0 +1,10 @@
+C:\Users\NOMNOTHO XULU\OneDrive - belgiumcampus.ac.za\MODULES\PRG\PRG272\New folder\PRG271.281_PROJ\PRG271.281_PROJ\bin\Debug\PRG271.281_PROJ.exe.config
+C:\Users\NOMNOTHO XULU\OneDrive - belgiumcampus.ac.za\MODULES\PRG\PRG272\New folder\PRG271.281_PROJ\PRG271.281_PROJ\bin\Debug\PRG271.281_PROJ.exe
+C:\Users\NOMNOTHO XULU\OneDrive - belgiumcampus.ac.za\MODULES\PRG\PRG272\New folder\PRG271.281_PROJ\PRG271.281_PROJ\bin\Debug\PRG271.281_PROJ.pdb
+C:\Users\NOMNOTHO XULU\OneDrive - belgiumcampus.ac.za\MODULES\PRG\PRG272\New folder\PRG271.281_PROJ\PRG271.281_PROJ\obj\Debug\PRG271.281_PROJ.csproj.AssemblyReference.cache
+C:\Users\NOMNOTHO XULU\OneDrive - belgiumcampus.ac.za\MODULES\PRG\PRG272\New folder\PRG271.281_PROJ\PRG271.281_PROJ\obj\Debug\PRG271._281_PROJ.Form1.resources
+C:\Users\NOMNOTHO XULU\OneDrive - belgiumcampus.ac.za\MODULES\PRG\PRG272\New folder\PRG271.281_PROJ\PRG271.281_PROJ\obj\Debug\PRG271._281_PROJ.Properties.Resources.resources
+C:\Users\NOMNOTHO XULU\OneDrive - belgiumcampus.ac.za\MODULES\PRG\PRG272\New folder\PRG271.281_PROJ\PRG271.281_PROJ\obj\Debug\PRG271.281_PROJ.csproj.GenerateResource.cache
+C:\Users\NOMNOTHO XULU\OneDrive - belgiumcampus.ac.za\MODULES\PRG\PRG272\New folder\PRG271.281_PROJ\PRG271.281_PROJ\obj\Debug\PRG271.281_PROJ.csproj.CoreCompileInputs.cache
+C:\Users\NOMNOTHO XULU\OneDrive - belgiumcampus.ac.za\MODULES\PRG\PRG272\New folder\PRG271.281_PROJ\PRG271.281_PROJ\obj\Debug\PRG271.281_PROJ.exe
+C:\Users\NOMNOTHO XULU\OneDrive - belgiumcampus.ac.za\MODULES\PRG\PRG272\New folder\PRG271.281_PROJ\PRG271.281_PROJ\obj\Debug\PRG271.281_PROJ.pdb
