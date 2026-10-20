@@ -53,69 +53,14 @@ public Form1()
             string age = txtAge.Text.Trim();
             string score = txtScore.Text.Trim();
 
-            // Check the ID before calling ConditionsMet, because that method splits on '-'.
-            if (!System.Text.RegularExpressions.Regex.IsMatch(id, @"^WR-[0-9]{4}$"))
-            {
-                MessageBox.Show("Animal ID must look like WR-0001.");
-                txtID.Focus();
-                return;
-            }
-
-            if (!logic.ConditionsMet(id, name, species, age, score))
-            {
-                // Shared validation is handled by BusinessLogic.
-                return;
-            }
-
-            int parsedScore;
-            if (!int.TryParse(score, out parsedScore) || parsedScore < 0 || parsedScore > 100)
-            {
-                MessageBox.Show("Recovery Score must be a whole number between 0 and 100.");
-                txtScore.Focus();
-                return;
-            }
-
-            if (handler.animals.Any(a => string.Equals(a.AnimalID, id, StringComparison.OrdinalIgnoreCase)))
-            {
-                MessageBox.Show("An animal with this ID already exists.");
-                txtID.Focus();
-                return;
-            }
-
-            string status;
-            string unit;
-            DataHandler.ClassifyScore(parsedScore, out status, out unit);
+            
 
             Animal animal = new Animal(id, name, species, age, score, status, unit);
-            try
-            {
-                // DataHandler adds the animal to the in-memory list only.
-                handler.AddAnimal(animal);
-                dgvView.DataSource = null;
-                dgvView.DataSource = handler.animals;
-                txtStatus.Text = status;
-                txtUnit.Text = unit;
-                MessageBox.Show("Animal added to the list. Status: " + status + ", Housing: " + unit);
-
-                txtID.Clear();
-                txtName.Clear();
-                txtSpecies.Clear();
-                txtAge.Clear();
-                txtScore.Clear();
-                txtID.Focus();
+            
+            
+        
             }
-            catch (UnauthorizedAccessException)
-            {
-                MessageBox.Show("Permission denied while saving animals.txt.");
-            }
-            catch (System.IO.IOException ex)
-            {
-                MessageBox.Show("Could not save the animal: " + ex.Message);
-            }
-            catch (InvalidOperationException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+           
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
