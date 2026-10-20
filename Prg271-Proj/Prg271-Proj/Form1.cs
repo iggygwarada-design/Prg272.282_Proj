@@ -11,11 +11,23 @@ using System.Windows.Forms;
 namespace Prg271_Proj
 {
     public partial class Form1 : Form
-    {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+    }
+        DataHandler handler = new DataHandler();
+ BusinessLogic logic = new BusinessLogic();
+public Form1()
+{
+    InitializeComponent();
+    btnEditDone.Enabled = false;
+    btnCheck.Enabled = false;
+    
+   
+    handler.getAllData();
+
+    BindingSource source = new BindingSource();
+    source.DataSource= handler.animals;
+    dgvView.DataSource= source;
+}
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
