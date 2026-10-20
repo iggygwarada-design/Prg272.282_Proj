@@ -8,7 +8,7 @@ namespace Prg271_Proj
 {
     internal class BusinessLogic
     {
-        public bool ConditionsMet(string id, string Name, string species, string age)
+        public bool ConditionsMet(string id, string Name, string species, string age,string score)
 {
     //checks all the requirements
     bool met = true;
