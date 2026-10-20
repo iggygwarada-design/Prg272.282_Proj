@@ -1,0 +1,10 @@
+C:\Users\NOMNOTHO XULU\Downloads\Prg272.282_Proj-main\Prg272.282_Proj-main\Prg271-Proj\Prg271-Proj\obj\Debug\Prg271-Proj.csproj.AssemblyReference.cache
+C:\Users\NOMNOTHO XULU\Downloads\Prg272.282_Proj-main\Prg272.282_Proj-main\Prg271-Proj\Prg271-Proj\obj\Debug\Prg271_Proj.Form1.resources
+C:\Users\NOMNOTHO XULU\Downloads\Prg272.282_Proj-main\Prg272.282_Proj-main\Prg271-Proj\Prg271-Proj\obj\Debug\Prg271_Proj.Properties.Resources.resources
+C:\Users\NOMNOTHO XULU\Downloads\Prg272.282_Proj-main\Prg272.282_Proj-main\Prg271-Proj\Prg271-Proj\obj\Debug\Prg271-Proj.csproj.GenerateResource.cache
+C:\Users\NOMNOTHO XULU\Downloads\Prg272.282_Proj-main\Prg272.282_Proj-main\Prg271-Proj\Prg271-Proj\obj\Debug\Prg271-Proj.csproj.CoreCompileInputs.cache
+C:\Users\NOMNOTHO XULU\Downloads\Prg272.282_Proj-main\Prg272.282_Proj-main\Prg271-Proj\Prg271-Proj\bin\Debug\Prg271-Proj.exe.config
+C:\Users\NOMNOTHO XULU\Downloads\Prg272.282_Proj-main\Prg272.282_Proj-main\Prg271-Proj\Prg271-Proj\bin\Debug\Prg271-Proj.exe
+C:\Users\NOMNOTHO XULU\Downloads\Prg272.282_Proj-main\Prg272.282_Proj-main\Prg271-Proj\Prg271-Proj\bin\Debug\Prg271-Proj.pdb
+C:\Users\NOMNOTHO XULU\Downloads\Prg272.282_Proj-main\Prg272.282_Proj-main\Prg271-Proj\Prg271-Proj\obj\Debug\Prg271-Proj.exe
+C:\Users\NOMNOTHO XULU\Downloads\Prg272.282_Proj-main\Prg272.282_Proj-main\Prg271-Proj\Prg271-Proj\obj\Debug\Prg271-Proj.pdb
