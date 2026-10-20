@@ -25,5 +25,32 @@ namespace Prg271_Proj
      }
      
  }
+
+         public void editList(string id, string Name, string species, string age, string score, string status, string unit)
+ {
+     Animal find = animals.FirstOrDefault(a => a.AnimalID == id);
+     //no need to check for null we took directly from table
+     find.AnimalID = id;
+     find.Age = age;
+     find.Species = species;
+     find.RecoveryScore = score;
+     find.HousingUnit = unit;
+
+ }
+
+ public void updateFile()
+ {
+     using (StreamWriter writer = new StreamWriter("animal.txt"))
+     {
+         
+         foreach (Animal item in animals)
+         {
+             string line = item.AnimalID + "|" + item.Name + "|" + item.Species + "|" + item.Age + "|" + item.RecoveryScore + "|" + item.Status + "|" + item.HousingUnit;
+             writer.WriteLine(line);
+         }
+
+     }
+ }
+        
     }
 }
