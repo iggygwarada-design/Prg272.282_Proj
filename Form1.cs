@@ -56,7 +56,10 @@ public Form1()
             
 
             Animal animal = new Animal(id, name, species, age, score, status, unit);
-            
+            handeler.AddAnimal(animal);
+            handler.updateFile();
+        
+        
             
         
             }
