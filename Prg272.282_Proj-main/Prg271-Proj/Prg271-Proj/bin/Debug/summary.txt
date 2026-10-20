@@ -1,0 +1,13 @@
+ANIMAL SUMMARY REPORT
+Generated: 2026-10-20 21:33
+
+Total animals: 3
+Average age: 6,3
+Average recovery score: 42,0
+
+Status counts:
+  Critical: 1
+  Serious: 1
+  Stable: 0
+  Recovering: 0
+  Release-Ready: 1
