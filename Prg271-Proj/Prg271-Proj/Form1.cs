@@ -65,14 +65,14 @@ public Form1()
  txtName.Text = row.Cells[1].Value.ToString();
  txtSpecies.Text = row.Cells[2].Value.ToString();
  txtAge.Text = row.Cells[3].Value.ToString();
- txtScore.Text = "Leave Blank";
+ txtScore.Text = row.Cells[4].Value.ToString();
  txtStatus.Text = "leave Blank";
  txtUnit.Text = "leave Blank";
         }
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
- if (logic.ConditionsMet(txtID.Text, txtName.Text, txtSpecies.Text, txtAge.Text))
+ if (logic.ConditionsMet(txtID.Text, txtName.Text, txtSpecies.Text, txtAge.Text,txtScore.Text))
  {
      btnEditDone.Enabled = true;
      btnCheck.Enabled = false;
