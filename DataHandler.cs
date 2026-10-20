@@ -73,18 +73,42 @@ namespace Prg271_Proj
  }
 
  public void updateFile()
- {
+    {
      using (StreamWriter writer = new StreamWriter(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "animals.txt")))
-     {
+        {
          
          foreach (Animal item in animals)
-         {
+            {
              string line = item.AnimalID + "|" + item.Name + "|" + item.Species + "|" + item.Age + "|" + item.RecoveryScore + "|" + item.Status + "|" + item.HousingUnit;
              writer.WriteLine(line);
-         }
+            }
 
-     }
- }
-        
+         }
     }
+
+    public bool DeleteAnimal(string id)
+{
+    Animal found = animals.FirstOrDefault(a => string.Equals(a.AnimalID, id, StringComparison.OrdinalIgnoreCase));
+
+    if (found == null)
+    {
+        return false;
+    }
+
+    animals.Remove(found);
+    return true;
+}
+
+    public void SaveSummary(string summaryText)
+    {
+         string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "summary.txt");
+
+        string content = "ANIMAL SUMMARY REPORT" + Environment.NewLine
+                   + "Generated: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm") + Environment.NewLine
+                   + Environment.NewLine
+                   + summaryText;
+
+        File.WriteAllText(path, content);
+    }
+ }
 }

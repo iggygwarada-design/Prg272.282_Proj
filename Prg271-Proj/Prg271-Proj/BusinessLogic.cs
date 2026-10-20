@@ -42,9 +42,51 @@ namespace Prg271_Proj
     }
     return met;
 }
-public void Clculate()
+    public string BuildSummary(List<Animal> animals)
 {
+    int total = animals.Count;
 
+    int ageSum = 0;
+    int ageCount = 0;
+    int scoreSum = 0;
+    int scoreCount = 0;
+
+    foreach (Animal animal in animals)
+    {
+        if (int.TryParse(animal.Age, out int parsedAge))
+        {
+            ageSum += parsedAge;
+            ageCount++;
+        }
+        if (int.TryParse(animal.RecoveryScore, out int parsedScore))
+        {
+            scoreSum += parsedScore;
+            scoreCount++;
+        }
+    }
+
+    double avgAge = ageCount > 0 ? (double)ageSum / ageCount : 0;
+    double avgScore = scoreCount > 0 ? (double)scoreSum / scoreCount : 0;
+
+    int critical = animals.Count(a => a.Status == "Critical");
+    int serious = animals.Count(a => a.Status == "Serious");
+    int stable = animals.Count(a => a.Status == "Stable");
+    int recovering = animals.Count(a => a.Status == "Recovering");
+    int ready = animals.Count(a => a.Status == "Release-Ready");
+
+    StringBuilder sb = new StringBuilder();
+    sb.AppendLine("Total animals: " + total);
+    sb.AppendLine("Average age: " + avgAge.ToString("F1"));
+    sb.AppendLine("Average recovery score: " + avgScore.ToString("F1"));
+    sb.AppendLine();
+    sb.AppendLine("Status counts:");
+    sb.AppendLine("  Critical: " + critical);
+    sb.AppendLine("  Serious: " + serious);
+    sb.AppendLine("  Stable: " + stable);
+    sb.AppendLine("  Recovering: " + recovering);
+    sb.AppendLine("  Release-Ready: " + ready);
+
+    return sb.ToString();
 }
     }
 }
