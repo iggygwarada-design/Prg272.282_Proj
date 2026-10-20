@@ -89,13 +89,13 @@ public Form1()
             Animal animal = new Animal(id, name, species, age, score, status, unit);
             try
             {
-                // DataHandler adds the animal to its list and writes the record to disk.
+                // DataHandler adds the animal to the in-memory list only.
                 handler.AddAnimal(animal);
                 dgvView.DataSource = null;
                 dgvView.DataSource = handler.animals;
                 txtStatus.Text = status;
                 txtUnit.Text = unit;
-                MessageBox.Show("Animal added successfully. Status: " + status + ", Housing: " + unit);
+                MessageBox.Show("Animal added to the list. Status: " + status + ", Housing: " + unit);
 
                 txtID.Clear();
                 txtName.Clear();

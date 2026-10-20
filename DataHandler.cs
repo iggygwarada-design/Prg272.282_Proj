@@ -50,7 +50,7 @@ namespace Prg271_Proj
  }
 
 
- // Adds a new animal to the list and saves only the new record.
+ // Adds a new animal to the in-memory list only.
  public void AddAnimal(Animal animal)
  {
      if (animal == null)
@@ -59,12 +59,6 @@ namespace Prg271_Proj
      if (animals.Any(a => string.Equals(a.AnimalID, animal.AnimalID, StringComparison.OrdinalIgnoreCase)))
          throw new InvalidOperationException("An animal with this ID already exists.");
 
-     string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "animals.txt");
-     string line = string.Join("|", animal.AnimalID, animal.Name, animal.Species,
-         animal.Age, animal.RecoveryScore, animal.Status, animal.HousingUnit);
-
-     // Write to disk before updating the list so a failed save does not add a phantom record.
-     File.AppendAllText(path, line + Environment.NewLine, new UTF8Encoding(false));
      animals.Add(animal);
  }
 
